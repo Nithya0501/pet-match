@@ -1,0 +1,33 @@
+html,
+body,
+#root {
+  --main-font: "Baloo 2", sans-serif;
+  height: 100%;
+  margin: 0;
+
+  .app-layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .app-content {
+    flex-grow: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    min-height: 1px;
+
+    @media (max-width: 1024px) {
+      padding: 15px;
+    }
+
+    @media (max-width: 768px) {
+      padding: 10px;
+    }
+
+    @media (max-width: 480px) {
+      padding: 5px;
+    }
+
+  }
+}

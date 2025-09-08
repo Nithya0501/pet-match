@@ -1,0 +1,262 @@
+.visit-booking {
+  background: #fff;
+  padding: 40px 20px;
+  min-height: 100vh;
+}
+.visit-booking .container {
+  max-width: 900px;
+  margin: auto;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+}
+.visit-booking .arrow {
+  display: flex;
+  font-weight: 600;
+  font-size: 24px;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.visit-booking .booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+.visit-booking .booking-form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+.visit-booking .booking-form .form-group label {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000000;
+  width: 100%;
+}
+.visit-booking .booking-form .form-group input[type=text] {
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 13px;
+  background: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  color: #000000;
+}
+.visit-booking .booking-form .form-group .dropdown-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #000000;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 500;
+  background: #fff;
+}
+.visit-booking .booking-form .form-group .dropdown-header .drop-img {
+  width: 37px;
+  height: 27px;
+  transition: 0.3s;
+}
+.visit-booking .booking-form .form-group .dropdown-header .drop-img.open {
+  transform: rotate(180deg);
+}
+.visit-booking .booking-form .form-group .time-slot-options {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow-y: auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+.visit-booking .booking-form .form-group .time-slot-options .time-slot {
+  padding: 10px 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: 0.2s;
+}
+.visit-booking .booking-form .form-group .time-slot-options .time-slot:hover {
+  background-color: #f5f5f5;
+}
+.visit-booking .booking-form .form-group .time-slot-options .time-slot.selected {
+  background-color: #e6f7ff;
+}
+.visit-booking .booking-form .form-group .time-slot-options .time-slot-options {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  max-height: 300px;
+  overflow-y: auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin-top: 8px;
+  padding: 8px 0;
+}
+.visit-booking .booking-form .form-group .time-slot-options .time-slot-options .time-slot {
+  padding: 10px 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: 0.2s;
+}
+.visit-booking .booking-form .form-group .time-slot-options .time-slot-options .time-slot:hover {
+  background-color: #f5f5f5;
+}
+.visit-booking .booking-form .form-group .time-slot-options .time-slot-options .time-slot.selected {
+  background-color: #e6f7ff;
+}
+.visit-booking .booking-form .form-group .time-slot-options .time-slot-options .time-slot .container {
+  display: flex;
+  align-items: start;
+  cursor: pointer;
+}
+.visit-booking .booking-form .form-group .time-slot-options .time-slot-options .time-slot .container input[type=radio] {
+  display: none;
+}
+.visit-booking .booking-form .form-group .time-slot-options .time-slot-options .time-slot .container input[type=radio]:checked + .checkmark::after {
+  display: block;
+}
+.visit-booking .booking-form .form-group .time-slot-options .time-slot-options .time-slot .container .checkmark {
+  position: relative;
+  padding-left: 24px;
+  cursor: pointer;
+}
+.visit-booking .booking-form .form-group .time-slot-options .time-slot-options .time-slot .container .checkmark::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  border: 2px solid #007bff;
+  border-radius: 50%;
+  background: #fff;
+}
+.visit-booking .booking-form .form-group .time-slot-options .time-slot-options .time-slot .container .checkmark::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: calc(50% + 0px);
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #007bff;
+  display: none;
+}
+.visit-booking .booking-form .form-action {
+  text-align: center;
+}
+.visit-booking .booking-form .form-action .done-btn {
+  margin-top: 10px;
+  background: #ffd343;
+  border: none;
+  padding: 13px;
+  font-size: 22px;
+  font-weight: 600;
+  border-radius: 12px;
+  cursor: pointer;
+  width: 500px;
+  height: 57px;
+  transition: 0.3s;
+}
+.visit-booking .booking-form .form-action .done-btn:hover {
+  background: #e6b800;
+  color: #000;
+}
+@media (max-width: 600px) {
+  .visit-booking {
+    padding: 20px;
+  }
+  .visit-booking .container {
+    padding: 20px;
+  }
+  .visit-booking .booking-form {
+    gap: 15px;
+  }
+  .visit-booking .booking-form .form-action .done-btn {
+    width: 100%;
+  }
+}
+
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  z-index: 9999 !important;
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  align-items: center;
+}
+
+.success-modal {
+  position: fixed !important;
+  top: 50% !important;
+  left: 50% !important;
+  right: auto !important;
+  bottom: auto !important;
+  transform: translate(-50%, -50%) !important;
+  outline: none;
+}
+.success-modal .modal-content {
+  position: relative;
+  width: 400px;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  background: #fff;
+  outline: none;
+}
+.success-modal .modal-content img.tickpopup {
+  width: 130px;
+  margin-bottom: 15px;
+}
+.success-modal .modal-content p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #000000;
+  margin-bottom: 20px;
+}
+.success-modal .modal-content .home-btn {
+  background-color: #FFD34D;
+  color: #000000;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.3s all;
+}
+.success-modal .modal-content .home-btn:hover {
+  background-color: #e6b800;
+}
+.success-modal .modal-content .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 24PX;
+  line-height: 1;
+  cursor: pointer;
+}
+.success-modal .modal-content .close-btn img {
+  width: 20px;
+  height: 20px;
+}
+
+@media (min-width: 1024px) {
+  .modal-content {
+    max-width: 640px;
+  }
+}
+@media (max-width: 480px) {
+  .modal-content {
+    width: 95vw !important;
+    padding: 15px;
+  }
+}/*# sourceMappingURL=About.css.map */

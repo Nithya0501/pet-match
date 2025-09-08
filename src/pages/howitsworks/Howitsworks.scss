@@ -1,0 +1,168 @@
+.pet-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+    position: relative;
+
+    .step {
+        display: flex;
+        align-items: center;
+        margin: 3rem 0;
+        gap: 2rem;
+        flex-wrap: wrap;
+
+        &.reverse.step-two {
+            position: relative;
+            left: 100px;
+        }
+
+        &.reverse {
+            flex-direction: row-reverse;
+            text-align: right;
+        }
+
+        .step-img.step-two-align {
+            position: relative;
+            bottom: 90px;
+        }
+
+        .step-img.step-three {
+            position: relative;
+            bottom: 140px;
+        }
+
+        .step-img {
+            flex: 1;
+            max-width: 365px;
+            text-align: center;
+        }
+
+        .text {
+            flex: 1;
+            max-width: 365px;
+            text-align: center;
+
+            h1 {
+                font-size: 36px;
+                font-weight: 700;
+                color: #000000;
+            }
+
+            h3 {
+                font-size: 24px;
+                margin: 1rem 0;
+                display: flex;
+                gap: 0.5rem;
+                font-weight: 500;
+                justify-content: center;
+                align-items: center;
+
+                .icon-img {
+                    width: 22px;
+                    height: 22px;
+                }
+            }
+
+            p {
+
+                font-size: 24px;
+                font-weight: 500;
+                line-height: 1.6;
+                color: #000000;
+            }
+        }
+    }
+
+    .paw {
+        position: absolute;
+        width: 60px;
+        opacity: 0.7;
+
+        &.paw1 {
+            top: 235px;
+            left: 69%;
+            transform: rotate(14deg);
+            width: 291px;
+        }
+
+        &.paw2 {
+            top: 56%;
+            right: 60px;
+            transform: rotate(9deg);
+            width: 287px;
+        }
+
+        &.paw3 {
+
+            bottom: 10%;
+            left: 9%;
+            transform: rotate(-3deg);
+            width: 216px;
+        }
+    }
+
+
+
+    @media (max-width: 1024px) {
+        .step {
+            flex-direction: column !important;
+            text-align: center;
+
+            .step-img {
+                max-width: 220px;
+                position: static !important;
+
+            }
+
+            .paw {
+                display: none;
+
+            }
+
+
+
+            .text {
+                max-width: 100%;
+
+                h1 {
+                    font-size: 24px;
+                }
+
+                h3 {
+                    font-size: 18px;
+                }
+
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .reverse.step-two {
+            left: 0 !important;
+
+        }
+    }
+
+
+    @media (max-width: 768px) {
+        .paw {
+            display: none;
+
+        }
+
+        .text {
+            h1 {
+                font-size: 20px;
+            }
+
+            h3 {
+                font-size: 16px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+}

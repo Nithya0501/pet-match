@@ -1,0 +1,273 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: var(--main-font);
+}
+
+.top-banner {
+  width: 100%;
+  background: #fffdef;
+  max-width: 1400px;
+  padding: 3rem 0;
+}
+
+.banner-inner {
+  display: flex;
+  margin: auto;
+  gap: 4rem;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+.banner-inner .banner-text {
+  flex: 1 1 500px;
+  gap: 16px;
+}
+.banner-inner .banner-text h2 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 77px;
+}
+.banner-inner .banner-text p {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+.banner-inner .btn .browsebtn,
+.banner-inner .btn .listbtn {
+  min-width: 184px;
+  height: 48px;
+  padding: 5px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.2s ease;
+}
+.banner-inner .btn .browsebtn {
+  background-color: #ffd343;
+  color: #0a0a0a !important;
+  margin-right: 8px;
+}
+.banner-inner .btn .browsebtn:hover {
+  background-color: #e3b832;
+}
+.banner-inner .btn .listbtn {
+  background-color: #FFFDEF;
+  border: 1px solid #ffd343;
+  color: #0a0a0a !important;
+}
+.banner-inner .btn .listbtn:hover {
+  background-color: #fff6da;
+}
+.banner-inner .banner-img {
+  flex: 1 1 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
+}
+
+@media (max-width: 900px) {
+  .banner {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+  .banner .bannertext {
+    order: 2;
+  }
+  .banner .banner-imag {
+    order: 1;
+    max-width: 400px;
+  }
+}
+.pet-carousel {
+  margin: 50px auto;
+  text-align: center;
+}
+.pet-carousel .title {
+  font-weight: 700;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+.pet-carousel .carousel-wrapper {
+  display: flex;
+  align-items: center;
+}
+.pet-carousel .nav-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0 2vw;
+}
+.pet-carousel .nav-btn .arrow {
+  width: 6vw;
+  max-width: 30px;
+  min-width: 20px;
+  height: auto;
+  transition: filter 0.3s ease;
+}
+.pet-carousel .nav-btn:hover .arrow {
+  filter: brightness(0) saturate(100%) invert(81%) sepia(70%) saturate(522%) hue-rotate(1deg) brightness(102%) contrast(101%);
+}
+.pet-carousel .cards-container {
+  display: flex;
+  flex: 1;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.pet-carousel .pet-card {
+  background: #FFFFFF;
+  border: 1px solid #C6C6C6;
+  border-radius: 12px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 332px;
+  width: 100%;
+  padding: 16px;
+}
+.pet-carousel .pet-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+.pet-carousel .pet-card .pet-image {
+  max-width: 364px;
+  height: 289px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  width: 100%;
+  border-radius: 12px;
+}
+.pet-carousel .pet-card .card-body {
+  padding: 15px;
+  text-align: left;
+}
+.pet-carousel .pet-card .pet-name {
+  font-weight: 700;
+  font-size: 32px;
+  color: #000000;
+}
+.pet-carousel .pet-card .pet-info,
+.pet-carousel .pet-card .pet-location {
+  font-size: 24px;
+  font-weight: 500;
+  color: #000000;
+}
+.pet-carousel .pet-card .view-btn {
+  background-color: #FFD34D;
+  border: none;
+  padding: 7px 16px;
+  border-radius: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  width: 305px;
+  height: 50px;
+}
+.pet-carousel .pet-card .view-btn:hover {
+  background-color: #f0c000;
+}
+
+.whychoose h2 {
+  text-align: center;
+  margin-top: 5px;
+  font-size: 32px;
+}
+.whychoose .petchoose {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.whychoose .petchoose img {
+  max-width: 250px;
+  height: 200px;
+}
+
+.ourservices h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+}
+.ourservices .services {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.ourservices .services p {
+  font-size: 24px;
+  font-weight: 600;
+}
+.ourservices .services p img {
+  width: 30px;
+  height: 30px;
+}
+
+.pets-banner {
+  position: relative;
+  text-align: center;
+  background: #FFFFFF;
+  padding: 25px;
+  margin-top: 10px;
+}
+.pets-banner .decor-shapes {
+  position: absolute;
+  z-index: 1;
+  color: #FFD343;
+  top: 165px;
+  left: 2px;
+  width: 250px;
+  height: 146px;
+}
+.pets-banner .decor-sparkle {
+  position: absolute;
+  z-index: 1;
+  color: #FFD343;
+  top: 150px;
+  right: 20px;
+}
+.pets-banner .pets-image {
+  position: relative;
+  z-index: 2;
+  max-width: 100%;
+  top: 125px;
+}
+.pets-banner .banner-content {
+  position: relative;
+  background: #090909;
+  color: #fff;
+  padding: 50px 25px 25px;
+  z-index: 1;
+}
+.pets-banner .banner-content h2 {
+  margin: 0;
+  font-size: 36px;
+}
+.pets-banner .banner-content p {
+  font-size: 24px;
+  font-weight: 500;
+}
+.pets-banner .banner-content .browsebtn {
+  display: inline-block;
+  background: #FFD343;
+  padding: 0.5rem 1rem;
+  color: #0A0A0A;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.pets-banner .banner-content .browsebtn:hover {
+  background-color: #e3b832;
+}
+@media (max-width: 650px) {
+  .pets-banner .decor-shapes,
+  .pets-banner .decor-sparkle {
+    display: none;
+  }
+}/*# sourceMappingURL=Homepage.css.map */

@@ -1,0 +1,134 @@
+.footer {
+  background-color: #090909;
+  color: #FFFFFF;
+  font-family: var(--main-font);
+  border: 1.5px solid #FFC400;
+  margin: 0;
+}
+.footer .footer-whole {
+  display: flex;
+  padding: 15px;
+  max-width: 1277px;
+  margin: auto;
+}
+.footer .heading-color {
+  color: #FFD343;
+  font-weight: 700;
+  font-size: 20px;
+  display: inline-block;
+  line-height: 1;
+}
+.footer p {
+  margin: 0;
+  font-weight: 500;
+  font-size: 16px;
+}
+.footer .brand p:first-child {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+}
+.footer .footer-section {
+  margin: 2rem;
+  padding: 9px;
+  flex: 1 1 200px;
+}
+.footer ul {
+  margin: 0;
+}
+.footer li {
+  margin-bottom: 0.5rem;
+  color: #FFFFFF;
+}
+.footer li::marker {
+  color: #090909;
+}
+.footer .footer-section.policies ul {
+  list-style: disc;
+  font-size: 20px;
+  font-weight: 500;
+}
+.footer .footer-section.policies li {
+  margin-bottom: 0.5rem;
+}
+.footer .footer-section.policies li::marker {
+  color: #FFFFFF;
+}
+.footer .title-link {
+  font-size: 24px;
+  font-weight: 700;
+  font-style: bold;
+}
+.footer .footer-section ul {
+  list-style: none;
+  padding: 0;
+  font-size: 20px;
+  font-weight: 500;
+}
+.footer .footer-section ul li {
+  margin-bottom: 10px;
+}
+.footer .footer-section ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.footer .footer-section ul li a:hover, .footer .footer-section ul li a:active {
+  color: #FFC400;
+}
+.footer .title-contact {
+  font-size: 24px;
+  font-weight: 700;
+  font-style: bold;
+}
+.footer img {
+  vertical-align: middle;
+  margin-right: 0.5rem;
+  width: 30px;
+  height: 28px;
+}
+.footer .footer-section.contact ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 600;
+}
+.footer .footer-section.contact ul a {
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.footer .footer-section.contact ul a:hover, .footer .footer-section.contact ul a:active {
+  color: #ffcc00;
+}
+.footer .footer-section.contact ul img {
+  width: 20px;
+  margin-right: 8px;
+}
+.footer .app-contact1 {
+  font-size: 16px;
+  font-weight: 500;
+}
+.footer .app-contact2 {
+  font-size: 16px;
+  font-weight: 500;
+}
+.footer > div:last-child {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  font-size: 0.85rem;
+  color: #FFFFFF;
+  padding-bottom: 20px;
+}
+@media (max-width: 768px) {
+  .footer .footer-whole {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}/*# sourceMappingURL=Footer.css.map */

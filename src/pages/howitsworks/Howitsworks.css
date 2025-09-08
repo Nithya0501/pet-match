@@ -1,0 +1,125 @@
+.pet-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+  position: relative;
+}
+.pet-container .step {
+  display: flex;
+  align-items: center;
+  margin: 3rem 0;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.pet-container .step.reverse.step-two {
+  position: relative;
+  left: 100px;
+}
+.pet-container .step.reverse {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+.pet-container .step .step-img.step-two-align {
+  position: relative;
+  bottom: 90px;
+}
+.pet-container .step .step-img.step-three {
+  position: relative;
+  bottom: 140px;
+}
+.pet-container .step .step-img {
+  flex: 1;
+  max-width: 365px;
+  text-align: center;
+}
+.pet-container .step .text {
+  flex: 1;
+  max-width: 365px;
+  text-align: center;
+}
+.pet-container .step .text h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #000000;
+}
+.pet-container .step .text h3 {
+  font-size: 24px;
+  margin: 1rem 0;
+  display: flex;
+  gap: 0.5rem;
+  font-weight: 500;
+  justify-content: center;
+  align-items: center;
+}
+.pet-container .step .text h3 .icon-img {
+  width: 22px;
+  height: 22px;
+}
+.pet-container .step .text p {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #000000;
+}
+.pet-container .paw {
+  position: absolute;
+  width: 60px;
+  opacity: 0.7;
+}
+.pet-container .paw.paw1 {
+  top: 235px;
+  left: 69%;
+  transform: rotate(14deg);
+  width: 291px;
+}
+.pet-container .paw.paw2 {
+  top: 56%;
+  right: 60px;
+  transform: rotate(9deg);
+  width: 287px;
+}
+.pet-container .paw.paw3 {
+  bottom: 10%;
+  left: 9%;
+  transform: rotate(-3deg);
+  width: 216px;
+}
+@media (max-width: 900px) {
+  .pet-container .step {
+    flex-direction: column !important;
+    text-align: center;
+  }
+  .pet-container .step .step-img {
+    max-width: 220px;
+    position: static !important;
+  }
+  .pet-container .step .text {
+    max-width: 100%;
+  }
+  .pet-container .step .text h1 {
+    font-size: 24px;
+  }
+  .pet-container .step .text h3 {
+    font-size: 18px;
+  }
+  .pet-container .step .text p {
+    font-size: 16px;
+  }
+  .pet-container .reverse.step-two {
+    left: 0 !important;
+  }
+}
+@media (max-width: 500px) {
+  .pet-container .paw {
+    display: none;
+  }
+  .pet-container .text h1 {
+    font-size: 20px;
+  }
+  .pet-container .text h3 {
+    font-size: 16px;
+  }
+  .pet-container .text p {
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=Howitsworks.css.map */
